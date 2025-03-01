@@ -15,3 +15,4 @@ node_modules
 knex-demo.sqlite3
 knex_demo.sqlite3
 database.sqlite3
+database.sqlite3-journal

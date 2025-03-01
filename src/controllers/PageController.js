@@ -7,7 +7,12 @@
 import menuItems from "../data/navigation.js";
 import userData from "../data/user.js";
 
+import NavigationItem from "../models/NavigationItem.js";
+
 export const home = async (req, res) => {
+  const navItems = await NavigationItem.query();
+  return res.send(navItems);
+
   const pageData = {
     title: "Home",
     content: `
