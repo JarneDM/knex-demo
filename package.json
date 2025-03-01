@@ -8,18 +8,21 @@
     "db:migrate": "knex migrate:latest",
     "db:rollback": "knex migrate:rollback",
     "db:seed": "knex seed:run",
-    "start:dev": "nodemon  --config nodemon.json --env-file=.env ./src/app.js"
+    "start:dev": "nodemon  --config nodemon.json --require dotenv/config ./src/app.js"
   },
   "keywords": [],
   "author": {
-    "name": "Frederick Roegiers",
-    "email": "frederick.roegiers@arteveldehs.be"
+    "name": "Jarne De Meyer",
+    "email": "jarne.demeyer@student.arteveldehs.be"
   },
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "express-ejs-layouts": "^2.5.1"    
+    "express-ejs-layouts": "^2.5.1",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
